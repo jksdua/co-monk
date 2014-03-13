@@ -10,30 +10,27 @@ var thunkify = require('thunkify');
  */
 
 var methods = [
-  'drop',
   'update',
-  'updateById',
   'remove',
   'count',
   'find',
   'findOne',
-  'findById',
-  'findAndModify',
-  'insert'
+  'insert',
+  'ensureIndex'
 ];
 
 /**
- * Wrap `col`.
+ * Wrap `db`.
  *
- * @param {Collection} col
- * @return {Collection}
+ * @param {Datastore} db
+ * @return {Datastore}
  * @api public
  */
 
-module.exports = function(col){
+module.exports = function(db){
   methods.forEach(function(method){
-    col[method] = thunkify(col[method]);
+    db[method] = thunkify(db[method]);
   });
 
-  return col;
+  return db;
 };

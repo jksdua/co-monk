@@ -3,12 +3,12 @@
  * Module dependencies.
  */
 
-var monk = require('monk');
+var Datastore = require('nedb');
 var wrap = require('..');
 var co = require('co');
-var db = monk('localhost/test');
+var db = new Datastore({ autoload: true }); // in-memory database
 
-var users = wrap(db.get('users'));
+var users = wrap(db);
 
 describe('queries', function(){
   it('should work', function(done){

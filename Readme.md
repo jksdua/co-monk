@@ -1,12 +1,12 @@
 
-# co-monk
+# co-nedb
 
-  MongoDB with generator goodness.
+  Nedb made more awesome with generators.
 
 ## Installation
 
 ```
-$ npm install co-monk
+$ npm install co-nedb
 ```
 
 ## Setup
@@ -14,11 +14,11 @@ $ npm install co-monk
   Call `wrap()` on collections to make them generator friendly:
 
 ```js
-var monk = require('monk');
-var wrap = require('co-monk');
-var db = monk('localhost/test');
+var Datastore = require('nedb');
+var wrap = require('co-nedb');
 
-var users = wrap(db.get('users'));
+var db = new Datastore({ autoload: true }); // in-memory database
+var users = wrap(db);
 ```
 
 ## Example

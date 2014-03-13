@@ -1,18 +1,27 @@
 {
-  "name": "co-monk",
+  "name": "co-nedb",
   "version": "0.0.1",
-  "repository": "visionmedia/co-monk",
-  "description": "mongodb generator goodness for co",
-  "keywords": ["co", "monk", "generators", "mongo", "mongodb"],
+  "repository": "jksdua/co-nedb",
+  "description": "nedb generator goodness for co",
+  "keywords": [
+    "co",
+    "nedb",
+    "generators"
+  ],
   "dependencies": {
     "thunkify": "0.0.1",
-    "monk": "~0.7.1"
+    "nedb": "~0.10.4"
   },
   "devDependencies": {
     "mocha": "*",
     "should": "*",
     "co": "~2.3.0"
   },
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --require should --reporter dot --harmony --bail"
+  },
   "license": "MIT"
 }
