@@ -1,5 +1,5 @@
 
-# co-nedb
+# co-nedb       [![NPM version][npm-image]][npm-url] [![Dependencies Status][dep-image]][dep-url]
 
   Nedb made more awesome with generators.
 
@@ -60,3 +60,17 @@ res.should.have.length(3);
 # License
 
   MIT
+
+
+# Changelog
+
+## v1.0.0 (18 Oct 2014)
+- Bumped thunkify version from `0.0.1` to `2.1.2`.
+- Removed nedb as a dependency
+- Added .npmignore
+
+
+[npm-image]: https://img.shields.io/npm/v/co-nedb.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/co-nedb
+[dep-image]: https://david-dm.org/jksdua/co-nedb.svg?style=flat-square
+[dep-url]: https://david-dm.org/jksdua/co-nedb

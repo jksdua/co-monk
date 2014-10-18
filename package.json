@@ -1,6 +1,6 @@
 {
   "name": "co-nedb",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "repository": "jksdua/co-nedb",
   "description": "nedb generator goodness for co",
   "keywords": [
@@ -9,13 +9,13 @@
     "generators"
   ],
   "dependencies": {
-    "thunkify": "0.0.1",
-    "nedb": "~0.10.4"
+    "thunkify": "~2.1.2"
   },
   "devDependencies": {
     "mocha": "*",
     "should": "*",
-    "co": "~2.3.0"
+    "co": "*",
+    "nedb": "*"
   },
   "files": [
     "index.js"
