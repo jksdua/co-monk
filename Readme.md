@@ -64,7 +64,7 @@ res.should.have.length(3);
 
 # Changelog
 
-## v1.0.0 (18 Oct 2014)
+## v2.0.0 (18 Oct 2014)
 - Bumped thunkify version from `0.0.1` to `2.1.2`.
 - Removed nedb as a dependency
 - Added .npmignore
