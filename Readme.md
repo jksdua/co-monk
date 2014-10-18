@@ -1,5 +1,5 @@
 
-# co-nedb       [![NPM version][npm-image]][npm-url] [![Dependencies Status][dep-image]][dep-url]
+# co-nedb       [![NPM version][npm-image]][npm-url] [![Dependencies Status][dep-image]][dep-url] [![Build Status][build-image]][build-url] 
 
   Nedb made more awesome with generators.
 
@@ -72,5 +72,7 @@ res.should.have.length(3);
 
 [npm-image]: https://img.shields.io/npm/v/co-nedb.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/co-nedb
-[dep-image]: https://david-dm.org/jksdua/co-nedb.svg?style=flat-square
+[dep-image]: http://img.shields.io/david/jksdua/co-nedb.svg?style=flat-square
 [dep-url]: https://david-dm.org/jksdua/co-nedb
+[build-image]: http://img.shields.io/travis/jksdua/co-nedb.svg?style=flat-square
+[build-url]: https://travis-ci.org/jksdua/co-nedb
