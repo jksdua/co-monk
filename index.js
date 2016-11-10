@@ -16,7 +16,8 @@ var methods = [
   'find',
   'findOne',
   'insert',
-  'ensureIndex'
+  'ensureIndex',
+  'loadDatabase'
 ];
 
 /**
